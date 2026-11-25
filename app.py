@@ -153,12 +153,12 @@ with tab1:
                                         "Tích cực": probs[k]["pos"], "Trung tính": probs[k]["neu"],
                                         "Tiêu cực": probs[k]["neg"],
                                         "Kết luận": LAB_VI[amodel.decide(probs[k], k)]} for k in ASPECT_KEYS])
-                         .round(3), hide_index=True, use_container_width=True)
+                         .round(3), hide_index=True, width="stretch")
             evr = [{"Khía cạnh": ASPECT_NAMES[k], "Vế câu": e["clause"], "Hướng": LAB_VI[e["label"]],
                     "Mức đóng góp": e["weight"]} for k, a in asp.items() if a for e in a["evidence"]]
             if evr:
                 st.caption("Căn cứ: bỏ vế câu ra thì xác suất giảm bao nhiêu")
-                st.dataframe(pd.DataFrame(evr), hide_index=True, use_container_width=True)
+                st.dataframe(pd.DataFrame(evr), hide_index=True, width="stretch")
             st.caption("Văn bản sau tiền xử lý")
             st.code(r["clean"] or "(rỗng)", language=None)
 
@@ -215,7 +215,7 @@ with tab2:
                 rows.append(row)
             df = pd.DataFrame(rows)
             with st.expander("Chi tiết từng bình luận"):
-                st.dataframe(df, hide_index=True, use_container_width=True)
+                st.dataframe(df, hide_index=True, width="stretch")
             st.download_button("Tải kết quả CSV", df.to_csv(index=False).encode("utf-8-sig"),
                                "ket_qua_cam_xuc.csv", "text/csv")
 
@@ -266,7 +266,7 @@ with tab3:
                         row[f"{A['titles'][m]} · F1 cặp"] = round(pa["tuple_f1"] * 100, 1)
                         row[f"{A['titles'][m]} · F1 phát hiện"] = round(pa["detect_f1"] * 100, 1)
                 tbl.append(row)
-            st.dataframe(pd.DataFrame(tbl), hide_index=True, use_container_width=True)
+            st.dataframe(pd.DataFrame(tbl), hide_index=True, width="stretch")
     if rpath.exists():
         rep = json.loads(rpath.read_text(encoding="utf-8"))
         with st.expander("Dữ liệu gán nhãn và độ đồng thuận"):
@@ -277,4 +277,4 @@ with tab3:
                                         "Cohen's kappa (4 nhãn)": round(v["kappa"], 3),
                                         "Kappa (có nhắc / không)": round(v["kappa_mention"], 3)}
                                        for k, v in rep["agreement"].items()]), hide_index=True,
-                         use_container_width=True)
+                         width="stretch")
