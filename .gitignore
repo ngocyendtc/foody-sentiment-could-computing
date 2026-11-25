@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Moi truong ao (Streamlit Cloud tu cai tu requirements.txt)
+.venv/
+venv/
+env/
+
+# Bi mat - khai bao trong Settings > Secrets cua Streamlit Cloud, khong day len GitHub
+.streamlit/secrets.toml
+
+# He dieu hanh / IDE
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Luu y: KHONG ignore models/, data/foody/, results/ - app.py can cac thu muc nay khi chay tren cloud.

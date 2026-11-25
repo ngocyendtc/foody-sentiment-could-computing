@@ -1,0 +1,126 @@
+{
+  "n": 5000,
+  "n_double": 2501,
+  "n_single": 2499,
+  "n_disagree_cells": 272,
+  "n_adjudicated": 272,
+  "unresolved": 0,
+  "agreement": {
+    "food": {
+      "agreement": 0.9672131147540983,
+      "kappa": 0.9486181555430618,
+      "kappa_mention": 0.9712655512731342
+    },
+    "price": {
+      "agreement": 0.9820071971211516,
+      "kappa": 0.9720059040193896,
+      "kappa_mention": 0.9871688317018613
+    },
+    "service": {
+      "agreement": 0.9808076769292283,
+      "kappa": 0.9706661401715149,
+      "kappa_mention": 0.9783012110795024
+    },
+    "ambience": {
+      "agreement": 0.9816073570571772,
+      "kappa": 0.9655314675237011,
+      "kappa_mention": 0.9756642396239057
+    },
+    "hygiene": {
+      "agreement": 0.9956017592962815,
+      "kappa": 0.9852362622000336,
+      "kappa_mention": 0.9887037292147036
+    },
+    "location": {
+      "agreement": 0.9840063974410236,
+      "kappa": 0.9518856644866762,
+      "kappa_mention": 0.9715499785934556
+    }
+  },
+  "distribution": {
+    "food": {
+      "test": {
+        "neg": 76,
+        "neu": 51,
+        "none": 52,
+        "pos": 321
+      },
+      "train": {
+        "neg": 1111,
+        "neu": 722,
+        "none": 467,
+        "pos": 2200
+      }
+    },
+    "price": {
+      "test": {
+        "neg": 54,
+        "neu": 46,
+        "none": 274,
+        "pos": 126
+      },
+      "train": {
+        "neg": 699,
+        "neu": 562,
+        "none": 2360,
+        "pos": 879
+      }
+    },
+    "service": {
+      "test": {
+        "neg": 66,
+        "neu": 15,
+        "none": 229,
+        "pos": 190
+      },
+      "train": {
+        "neg": 907,
+        "neu": 161,
+        "none": 2185,
+        "pos": 1247
+      }
+    },
+    "ambience": {
+      "test": {
+        "neg": 35,
+        "neu": 27,
+        "none": 301,
+        "pos": 137
+      },
+      "train": {
+        "neg": 363,
+        "neu": 285,
+        "none": 2986,
+        "pos": 866
+      }
+    },
+    "hygiene": {
+      "test": {
+        "neg": 19,
+        "neu": 1,
+        "none": 418,
+        "pos": 62
+      },
+      "train": {
+        "neg": 330,
+        "neu": 15,
+        "none": 3785,
+        "pos": 370
+      }
+    },
+    "location": {
+      "test": {
+        "neg": 14,
+        "neu": 40,
+        "none": 412,
+        "pos": 34
+      },
+      "train": {
+        "neg": 159,
+        "neu": 339,
+        "none": 3658,
+        "pos": 344
+      }
+    }
+  }
+}

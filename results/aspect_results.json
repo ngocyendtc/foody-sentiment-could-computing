@@ -1,0 +1,299 @@
+{
+  "n_train": 4500,
+  "n_test": 500,
+  "models": {
+    "nb": {
+      "per_aspect": {
+        "food": {
+          "support_mention": 448,
+          "detect_p": 0.9341825902335457,
+          "detect_r": 0.9821428571428571,
+          "detect_f1": 0.9575625680087051,
+          "polarity_acc": 0.8392857142857143,
+          "macro_f1_4": 0.6521258294235514,
+          "tuple_f1": 0.8182807399347117
+        },
+        "price": {
+          "support_mention": 226,
+          "detect_p": 0.7424242424242424,
+          "detect_r": 0.8672566371681416,
+          "detect_f1": 0.8,
+          "polarity_acc": 0.6150442477876106,
+          "macro_f1_4": 0.5898046427355629,
+          "tuple_f1": 0.5673469387755102
+        },
+        "service": {
+          "support_mention": 271,
+          "detect_p": 0.7905405405405406,
+          "detect_r": 0.8634686346863468,
+          "detect_f1": 0.8253968253968254,
+          "polarity_acc": 0.7601476014760148,
+          "macro_f1_4": 0.5899318079429089,
+          "tuple_f1": 0.72663139329806
+        },
+        "ambience": {
+          "support_mention": 199,
+          "detect_p": 0.7511111111111111,
+          "detect_r": 0.8492462311557789,
+          "detect_f1": 0.7971698113207547,
+          "polarity_acc": 0.7035175879396985,
+          "macro_f1_4": 0.5782812977406263,
+          "tuple_f1": 0.6603773584905661
+        },
+        "hygiene": {
+          "support_mention": 82,
+          "detect_p": 0.6567164179104478,
+          "detect_r": 0.5365853658536586,
+          "detect_f1": 0.5906040268456376,
+          "polarity_acc": 0.5365853658536586,
+          "macro_f1_4": 0.5032022262955976,
+          "tuple_f1": 0.5906040268456376
+        },
+        "location": {
+          "support_mention": 88,
+          "detect_p": 0.5176470588235295,
+          "detect_r": 0.5,
+          "detect_f1": 0.5086705202312138,
+          "polarity_acc": 0.2727272727272727,
+          "macro_f1_4": 0.39909104062671175,
+          "tuple_f1": 0.2774566473988439
+        }
+      },
+      "overall": {
+        "detect_p": 0.8004261363636364,
+        "detect_r": 0.8576864535768646,
+        "detect_f1": 0.8280675973548861,
+        "tuple_p": 0.6598011363636364,
+        "tuple_r": 0.7070015220700152,
+        "tuple_f1": 0.6825863335782514
+      },
+      "argmax": {
+        "detect_p": 0.7677245104659014,
+        "detect_r": 0.865296803652968,
+        "detect_f1": 0.8135957066189624,
+        "tuple_p": 0.6306549628629304,
+        "tuple_r": 0.710806697108067,
+        "tuple_f1": 0.6683363148479428
+      },
+      "params": {
+        "food": {
+          "param": 0.2,
+          "cv_macro_f1": 0.6560418437211358,
+          "mention_threshold": 0.25
+        },
+        "price": {
+          "param": 0.5,
+          "cv_macro_f1": 0.5576455839121169,
+          "mention_threshold": 0.2
+        },
+        "service": {
+          "param": 0.1,
+          "cv_macro_f1": 0.5713010034093942,
+          "mention_threshold": 0.2
+        },
+        "ambience": {
+          "param": 0.2,
+          "cv_macro_f1": 0.5138109822354966,
+          "mention_threshold": 0.2
+        },
+        "hygiene": {
+          "param": 0.5,
+          "cv_macro_f1": 0.48688742449294403,
+          "mention_threshold": 0.35
+        },
+        "location": {
+          "param": 0.2,
+          "cv_macro_f1": 0.475654059800536,
+          "mention_threshold": 0.2
+        }
+      },
+      "train_time_s": 5.617481708526611
+    },
+    "svm": {
+      "per_aspect": {
+        "food": {
+          "support_mention": 448,
+          "detect_p": 0.9516483516483516,
+          "detect_r": 0.9665178571428571,
+          "detect_f1": 0.9590254706533776,
+          "polarity_acc": 0.8459821428571429,
+          "macro_f1_4": 0.6962400305805894,
+          "tuple_f1": 0.8394241417497231
+        },
+        "price": {
+          "support_mention": 226,
+          "detect_p": 0.9070796460176991,
+          "detect_r": 0.9070796460176991,
+          "detect_f1": 0.9070796460176991,
+          "polarity_acc": 0.6504424778761062,
+          "macro_f1_4": 0.6720142319277526,
+          "tuple_f1": 0.6504424778761062
+        },
+        "service": {
+          "support_mention": 271,
+          "detect_p": 0.9358490566037736,
+          "detect_r": 0.915129151291513,
+          "detect_f1": 0.9253731343283582,
+          "polarity_acc": 0.8154981549815498,
+          "macro_f1_4": 0.6326314962406621,
+          "tuple_f1": 0.8246268656716419
+        },
+        "ambience": {
+          "support_mention": 199,
+          "detect_p": 0.9243243243243243,
+          "detect_r": 0.8592964824120602,
+          "detect_f1": 0.890625,
+          "polarity_acc": 0.7085427135678392,
+          "macro_f1_4": 0.6299310543901417,
+          "tuple_f1": 0.7343749999999999
+        },
+        "hygiene": {
+          "support_mention": 82,
+          "detect_p": 0.9726027397260274,
+          "detect_r": 0.8658536585365854,
+          "detect_f1": 0.9161290322580645,
+          "polarity_acc": 0.8170731707317073,
+          "macro_f1_4": 0.6221869040050858,
+          "tuple_f1": 0.864516129032258
+        },
+        "location": {
+          "support_mention": 88,
+          "detect_p": 0.7727272727272727,
+          "detect_r": 0.7727272727272727,
+          "detect_f1": 0.7727272727272727,
+          "polarity_acc": 0.5,
+          "macro_f1_4": 0.6152406431322651,
+          "tuple_f1": 0.5
+        }
+      },
+      "overall": {
+        "detect_p": 0.9256965944272446,
+        "detect_r": 0.9101978691019786,
+        "detect_f1": 0.9178818112049117,
+        "tuple_p": 0.7732198142414861,
+        "tuple_r": 0.7602739726027398,
+        "tuple_f1": 0.7666922486569456
+      },
+      "argmax": {
+        "detect_p": 0.953664700926706,
+        "detect_r": 0.8614916286149162,
+        "detect_f1": 0.9052379048380648,
+        "tuple_p": 0.8129738837405224,
+        "tuple_r": 0.7343987823439878,
+        "tuple_f1": 0.7716913234706118
+      },
+      "params": {
+        "food": {
+          "param": 0.3,
+          "cv_macro_f1": 0.6902321895142701,
+          "mention_threshold": 0.35
+        },
+        "price": {
+          "param": 0.1,
+          "cv_macro_f1": 0.6760769130928007,
+          "mention_threshold": 0.55
+        },
+        "service": {
+          "param": 0.3,
+          "cv_macro_f1": 0.6558775012400611,
+          "mention_threshold": 0.55
+        },
+        "ambience": {
+          "param": 0.1,
+          "cv_macro_f1": 0.627594164605134,
+          "mention_threshold": 0.55
+        },
+        "hygiene": {
+          "param": 1.0,
+          "cv_macro_f1": 0.5974318077663747,
+          "mention_threshold": 0.7
+        },
+        "location": {
+          "param": 0.3,
+          "cv_macro_f1": 0.5721321614476602,
+          "mention_threshold": 0.65
+        }
+      },
+      "train_time_s": 84.70453381538391
+    },
+    "keyword": {
+      "per_aspect": {
+        "food": {
+          "support_mention": 448,
+          "detect_p": 0.9620535714285714,
+          "detect_r": 0.9620535714285714,
+          "detect_f1": 0.9620535714285714,
+          "polarity_acc": 0.46875,
+          "macro_f1_4": 0.5165354421505138,
+          "tuple_f1": 0.46875
+        },
+        "price": {
+          "support_mention": 226,
+          "detect_p": 0.9029535864978903,
+          "detect_r": 0.9469026548672567,
+          "detect_f1": 0.9244060475161987,
+          "polarity_acc": 0.5,
+          "macro_f1_4": 0.6018263401878046,
+          "tuple_f1": 0.4881209503239741
+        },
+        "service": {
+          "support_mention": 271,
+          "detect_p": 0.8811188811188811,
+          "detect_r": 0.9298892988929889,
+          "detect_f1": 0.9048473967684022,
+          "polarity_acc": 0.5756457564575646,
+          "macro_f1_4": 0.5720697483985677,
+          "tuple_f1": 0.5601436265709155
+        },
+        "ambience": {
+          "support_mention": 199,
+          "detect_p": 0.6714801444043321,
+          "detect_r": 0.9346733668341709,
+          "detect_f1": 0.7815126050420168,
+          "polarity_acc": 0.36683417085427134,
+          "macro_f1_4": 0.4380627850610729,
+          "tuple_f1": 0.3067226890756303
+        },
+        "hygiene": {
+          "support_mention": 82,
+          "detect_p": 0.925,
+          "detect_r": 0.9024390243902439,
+          "detect_f1": 0.9135802469135802,
+          "polarity_acc": 0.6829268292682927,
+          "macro_f1_4": 0.6283349969551334,
+          "tuple_f1": 0.6913580246913581
+        },
+        "location": {
+          "support_mention": 88,
+          "detect_p": 0.6333333333333333,
+          "detect_r": 0.6477272727272727,
+          "detect_f1": 0.6404494382022472,
+          "polarity_acc": 0.3181818181818182,
+          "macro_f1_4": 0.46172431689099425,
+          "tuple_f1": 0.31460674157303375
+        }
+      },
+      "overall": {
+        "detect_p": 0.8561354019746121,
+        "detect_r": 0.923896499238965,
+        "detect_f1": 0.8887262079062958,
+        "tuple_p": 0.44851904090267986,
+        "tuple_r": 0.4840182648401826,
+        "tuple_f1": 0.46559297218155193
+      }
+    }
+  },
+  "titles": {
+    "nb": "Naive Bayes",
+    "svm": "SVM tuyến tính",
+    "keyword": "Từ khoá (cách cũ)"
+  },
+  "aspect_names": {
+    "food": "Đồ ăn",
+    "price": "Giá cả",
+    "service": "Phục vụ",
+    "ambience": "Không gian",
+    "hygiene": "Vệ sinh",
+    "location": "Vị trí"
+  }
+}

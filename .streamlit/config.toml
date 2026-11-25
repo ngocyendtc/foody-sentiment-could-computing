@@ -1,0 +1,13 @@
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#4A3428"
+backgroundColor = "#FFFBEC"
+secondaryBackgroundColor = "#F6EFE3"
+textColor = "#4A3428"
+font = "Quicksand:https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
